@@ -1,0 +1,35 @@
+*{
+    margin: 10;
+    padding: 8px;
+}
+
+/* .navbar{
+    position: absolute;
+    justify-content: space-around;
+    right: 0px;
+    width: 300px;
+    padding: 0px 100px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+} */
+
+.img{
+    background-color: black;
+    color: azure;
+    position: absolute;
+    justify-content: space-around;
+    width: 300px;
+    padding: 0px 459px;
+    text-align: right;
+    margin-left: 0px;
+    list-style-type: none;
+    margin-left: 15.650px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.img:hover{
+    background-color: rgb(115, 46, 179);
+    color: azure;
+}
