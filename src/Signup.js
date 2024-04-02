@@ -1,10 +1,12 @@
-// src/LoginForm.js
+import axios from 'axios';
 import React, { useState } from 'react';
-import './Login.css';
+import './Signup.css';
 import { Link } from 'react-router-dom';
 
-const Login = () => {
+const Signup = () => {
   const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
     email: '',
     password: '',
   });
@@ -19,13 +21,27 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Do something with the form data, like sending it to a server
+    console.log(formData); 
   };
 
   return (
-    <div className="login-form-container">
-      <h2>Login</h2>
+    <div className="signup-form-container">
+      <h2>Sign Up</h2>
       <form onSubmit={handleSubmit}>
+        <input
+          type="text"
+          name="fullName"
+          placeholder="Name"
+          value={formData.firstName}
+          onChange={handleChange}
+        />
+        {/* <input
+          type="text"
+          name="lastName"
+          placeholder="Last Name"
+          value={formData.lastName}
+          onChange={handleChange}
+        /> */}
         <input
           type="email"
           name="email"
@@ -40,10 +56,10 @@ const Login = () => {
           value={formData.password}
           onChange={handleChange}
         />
-        <Link to="/" type="submit" onClick={handleSubmit}>Login</Link>
+        <div className='Link'><Link to="/login" type="submit" onClick={handleSubmit} >Sign Up</Link></div>
       </form>
     </div>
   );
 };
 
-export default Login;
+export default Signup;

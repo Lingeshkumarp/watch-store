@@ -3,18 +3,24 @@ import logo from './logo.svg';
 import Login from './Login';
 import Home from './HomePage';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import Signup from './Signup';
+
 
 function App() {
   return (
 
-    // <BrowserRouter>
-    // <Routes>
-    //   <Route path="/" element={<Login/>}></Route>
-    // </Routes>
-    // </BrowserRouter>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Signup/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+      {/* <Route path="/homepage" element={<HomePage/>}></Route> */}
+    </Routes>
+    </BrowserRouter>
   
     // <Login />
-    <Home/>
+    // <Home/>
+    // <Signup/>
+
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
