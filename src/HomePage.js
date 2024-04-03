@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './HomePage.css';
-import {Link} from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 const HomePage=()=>{
 
@@ -11,7 +11,7 @@ const HomePage=()=>{
             <a>Home</a>
             <a>Smart</a>
             <a >Offers</a>
-            <a>Store</a>
+            <Link to={'/cart'}>Store</Link>
             <Link className="home-btn" to={'/login'}>Login</Link>
         </nav>
         <div className='image'><img src="watchgreen.jpg" alt="" width={"100%"} height={"300px"}/></div>

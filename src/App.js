@@ -1,9 +1,11 @@
-
 //import './App.css';
 import Login from './Login';
 import HomePage from './HomePage';
 import {BrowserRouter,Routes,Route} from 'react-router-dom';
 import Signup from './Signup';
+import Cart from './Cart';
+import Payment from './Payment';
+import Final from './Final';
 
 function App() {
   return (
@@ -12,29 +14,15 @@ function App() {
     <Routes>
       <Route path='/' element={<Signup/>}></Route>
       <Route path='/login' element={<Login/>}></Route>
-      <Route path='/homepage' element={<HomePage/>}></Route> 
+      <Route path='/homepage' element={<HomePage/>}></Route>
+      <Route path='/cart' element={<Cart/>}></Route> 
+      <Route path='/payment' element={<Payment/>}></Route>
+      <Route path='/final' element={<Final/>}></Route>
     </Routes>
     </BrowserRouter>
   
-    
-       </>
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    
+    {/* <Payment/> */}
+       </>  
   );
 }
 
