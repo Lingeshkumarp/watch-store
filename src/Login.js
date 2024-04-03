@@ -1,7 +1,7 @@
 // src/LoginForm.js
 import React, { useState } from 'react';
 import './Login.css';
-import { Link } from 'react-router-dom';
+import { Link,useNavigate } from 'react-router-dom';
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -9,6 +9,7 @@ const Login = () => {
     password: '',
   });
 
+  const nav  = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -19,13 +20,14 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(formData); // Do something with the form data, like sending it to a server
+    console.log(formData); 
+    nav('/homepage')
   };
 
   return (
     <div className="login-form-container">
       <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
+      <form>
         <input
           type="email"
           name="email"
@@ -40,7 +42,7 @@ const Login = () => {
           value={formData.password}
           onChange={handleChange}
         />
-        <Link to="/" type="submit" onClick={handleSubmit}>Login</Link>
+        <div className='Link'><Link to="/" onClick={handleSubmit}>Login</Link></div>
       </form>
     </div>
   );

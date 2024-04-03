@@ -1,16 +1,15 @@
 import axios from 'axios';
 import React, { useState } from 'react';
 import './Signup.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
+    fullName: '',
     email: '',
     password: '',
   });
-
+  const nav  = useNavigate();
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -22,12 +21,13 @@ const Signup = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData); 
+    nav('/login')
   };
 
   return (
     <div className="signup-form-container">
       <h2>Sign Up</h2>
-      <form onSubmit={handleSubmit}>
+      
         <input
           type="text"
           name="fullName"
@@ -56,8 +56,8 @@ const Signup = () => {
           value={formData.password}
           onChange={handleChange}
         />
-        <div className='Link'><Link to="/login" type="submit" onClick={handleSubmit} >Sign Up</Link></div>
-      </form>
+        <div className='Link'><Link to="/login"  onClick={handleSubmit}>Sign Up</Link></div>
+      
     </div>
   );
 };
