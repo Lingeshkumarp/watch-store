@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-//import './Home.css';
-//import { Link,useNavigate } from 'react-router-dom';
+import './Final.css';
 
 const Final=()=>{
 
      return(
         <>
-        <div>Done!</div>
-        <div className='image'><img src="paymentSuccess.png" alt="" width={"1000px"} height={"400px"}/></div>
-        <div color={'green'}>Payment Successful</div>
+        <div className='done'>Done!</div>
+        <div className='finalimage'><img src="paymentSuccess.png" alt="" width={"700px"} height={"400px"}/></div>
+        <div className='payments'>Payment Successful</div>
         </>
      );
 }

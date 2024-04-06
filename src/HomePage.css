@@ -1,9 +1,9 @@
-*{
+/* *{
     margin: 10;
     padding: 8px;
 }
 
-/* .navbar{
+.navbar{
     position: absolute;
     justify-content: space-around;
     right: 0px;
@@ -14,7 +14,18 @@
     color: aliceblue;
 } */
 
-.img{
+/* @media screen and (min-width: 780px) {
+    .img {
+    margin: auto;
+    width: 90%;
+    } */
+
+.outer-nav{
+    position: relative;
+    margin-top: 0;
+}
+
+.navbar{
     background-color: black;
     color: azure;
     position: absolute;
@@ -29,7 +40,92 @@
     padding-bottom: 5px;
 }
 
-.img:hover{
-    background-color: rgb(115, 46, 179);
-    color: azure;
+.navbar:hover{
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
 }
+
+.innerbox{
+    color: aliceblue;
+    background-color: azure;
+    border-radius: 10px;
+    border: 10px salmon;
+}
+
+.search-bar{
+    margin-top: 0px;
+    padding: 5px 40px 5px 15px;
+    border: 1px solid rgba(0, 0, 0, 0.25) !important;
+    border-radius: 25px;
+    width: 100%;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: green;
+    border: 2px solid #4CAF50;
+}
+
+.last{
+    color: aliceblue;
+}
+
+.phone{
+    margin-left: 35px;
+    position: relative;
+    width: 295px;
+    height: 500px;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    border-radius:15px ;
+    background-color: gray;
+    
+}
+
+.phone-ab {
+    position: absolute;
+    margin-top: 35px;
+    margin-bottom: 70px;
+    margin-left: 15px;
+    padding-top: 250px;
+    padding-left: 5px;
+    padding-right: 52px;
+    padding-bottom: 70px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #000000;
+    background-color: white;
+    border-radius: 10px;
+  }
+
+  .phoneinner{
+    background-image: url('D:\Full-Stack Watch-Store\watch-store\public\watchimg2.jpg');
+  }
+
+  .laptop{
+    position: relative;
+    margin-left: 500px;
+    width: 695px;
+    height: 450px;
+    border: 2px solid white;
+    margin-bottom: 10px;
+    border-radius:15px ;
+    background-color: gray;
+    
+}
+
+.laptop-ab {
+    position: absolute;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    margin-left: 15px;
+    padding-top: 230px;
+    padding-left: 5px;
+    padding-right: 450px;
+    padding-bottom: 30px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #000000;
+    background-color: white;
+    border-radius: 10px;
+  }
+

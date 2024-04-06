@@ -1,0 +1,15 @@
+.payments{
+    color: rgb(20, 189, 20);
+    position: relative;
+    margin-left: 590px;
+}
+.done{
+    position: relative;
+    margin-left: 625px;
+    font-size: medium;
+    color: aliceblue;
+}
+.finalimage{
+    position: relative;
+    margin-left: 300px;
+}

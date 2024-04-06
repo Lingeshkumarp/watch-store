@@ -1,12 +1,12 @@
 *{
   margin-top: 20px;
-  background-color: rgb(231, 222, 222);
+  background-color: rgb(32, 30, 30);
 }
 .login-form-container {
   width: 300px;
   margin: 0 auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
 }
 
@@ -39,4 +39,7 @@ button:hover {
 }
 .Link a:hover{
   background-color: #0056b3;
+}
+h2{
+  color: aliceblue;
 }

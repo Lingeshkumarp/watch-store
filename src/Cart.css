@@ -6,6 +6,7 @@
   
   .cart-item {
     border-bottom: 1px solid #ccc;
+    color: #ccc;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
@@ -20,6 +21,7 @@
   
   .cart-item input[type="number"] {
     width: 50px;
+    color: #ccc;
   }
   
   .cart-item button {
@@ -39,6 +41,7 @@
     margin-top: 20px;
     font-size: 1.2rem;
     font-weight: bold;
+    color: #ccc;
   }
   
   .price{
@@ -53,5 +56,5 @@
     max-width: 350px;
   }
   .cbtn{
-    background-color: rgb(0, 189, 189);
+    background-color: #007bff;
   }
